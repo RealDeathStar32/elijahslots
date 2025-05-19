@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elijahcoin Slots</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Left image -->
+    <img src="images/IMG_4629.jpeg" alt="Side Image" class="side-image">
+
+    <!-- Main game content -->
+    <div id="game-container">
+      <h1>Elijahcoin Slots</h1>
+      <div id="balance">Elijahcoin: $100.00</div>
+      <input id="bet-amount" type="number" min="1" step="1" value="1" />
+      <button id="spin-button">Spin</button>
+
+      <div id="spinner"></div>
+      <div id="result"></div>
+
+      <div id="game-over" style="display: none;">
+        <h2>No more elijah</h2>
+        <button id="restart-button">Restart</button>
+      </div>
+
+      <h2>You wanna see? (200 Elijahcoin)</h2>
+      <div class="image-box">
+        <div class="image-container" onclick="revealImage(0)">
+          <span class="cost-label"></span>
+        </div>
+        <div class="image-container" onclick="revealImage(1)">
+          <span class="cost-label"></span>
+        </div>
+        <div class="image-container" onclick="revealImage(2)">
+          <span class="cost-label"> </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right image -->
+    <img src="images/IMG_4629.jpeg" alt="Side Image" class="side-image">
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
